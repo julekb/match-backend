@@ -2,9 +2,9 @@ FROM python:3.13-alpine
 
 RUN apk -U upgrade && apk add bash
 
-RUN addgroup -S appgroup && adduser -S appuser -G appgroup
-# Tell docker that all future commands should run as the appuser
-USER appuser
+#RUN addgroup -S appgroup && adduser -S appuser -G appgroup
+## Tell docker that all future commands should run as the appuser
+#USER appuser
 
 WORKDIR /usr/app
 
